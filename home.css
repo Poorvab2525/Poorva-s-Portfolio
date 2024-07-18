@@ -1,0 +1,398 @@
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('./images/home2.png') no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+}
+
+nav {
+    background: #333;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    max-width: 600px;
+}
+
+nav ul li {
+    position: relative; /* Ensure relative positioning for absolute pseudo-elements */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+nav ul li a:hover,
+nav ul li.active a {
+    color: #f9f7f1; /* Change color on hover or when active */
+}
+
+nav ul li::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #1a1a18; /* Glow color */
+    transform: scaleX(0); /* Initially no glow */
+    transform-origin: bottom left;
+    transition: transform 0.3s ease; /* Smooth transition for glow effect */
+}
+
+nav ul li:hover::before,
+nav ul li.active::before {
+    transform: scaleX(1); /* Full glow effect on hover or when active */
+}
+
+/* Common glowing effect class */
+.glow {
+    color: #111010; /* Glow color */
+    text-shadow: 0 0 5px #eae8e8; /* Optional: Add shadow for more glow effect */
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 60px; /* Adjust for nav height */
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 550px;
+    height: 550px;
+    object-fit: cover;
+    margin-right: 5rem;
+}
+
+.intro-text h1 {
+    font-size: 3rem;
+}
+
+.animated-text {
+    animation: fadeIn 3s infinite;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 60px; /* Adjust for nav height */
+}
+
+.about-content {
+    max-width: 600px;
+}
+
+.about-content h1 {
+    font-size: 3rem;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.about-pic {
+    border-radius: 50%;
+    width: 550px;
+    height: 550px;
+    object-fit: cover;
+    margin-left: 2rem;
+}
+
+.skills-container {
+    padding-top: 80px; /* Adjust for nav height */
+    text-align: center;
+}
+
+.skills-container h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+.skill-card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    overflow: hidden;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.skill-card .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.skill-card h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.skill-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-card ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.skill-card ul li img {
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+    margin-right: 10px;
+}
+
+.skill-card p {
+    margin: 0.5rem 0;
+}
+
+.skill-card:hover {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+}
+
+.projects-container {
+    padding-top: 80px; /* Adjust for nav height */
+    text-align: center;
+}
+
+.projects-container h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.projects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; /* Increased spacing between cards */
+    padding: 0 1rem;
+    align-items: center;
+}
+
+.project-card {
+    position: relative;
+    background: #312b2b;
+    border-radius: 8px;
+    overflow: hidden;
+    color: white;
+    box-shadow: 0 0 10px rgba(77, 75, 75, 0.5);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    max-width: 800px;
+    width: 100%;
+    height: auto; /* Allow card height to be dynamic */
+}
+
+.project-card .overlay {
+    padding: 1rem;
+    background: rgba(75, 70, 70, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-card h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.github-link img {
+    width: 24px;
+    height: 24px;
+}
+
+.project-info {
+    padding: 1rem;
+}
+
+.project-info p {
+    margin: 0.5rem 0;
+}
+
+.project-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 1rem;
+    }
+
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .intro-text h1 {
+        font-size: 2rem;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-pic {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .skills-container h1 {
+        font-size: 2rem;
+    }
+
+    .skill-card h2 {
+        font-size: 1.2rem;
+    }
+
+    .skill-card p {
+        font-size: 1rem;
+    }
+
+    .projects-container h1 {
+        font-size: 2rem;
+    }
+
+    .project-card h2 {
+        font-size: 1.2rem;
+    }
+
+    .project-info p {
+        font-size: 1rem;
+    }
+
+    .project-card .overlay {
+        padding: 0.5rem;
+    }
+
+    .project-image {
+        height: 200px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .intro-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+    }
+
+    .about-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    .skills-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .skill-card h2 {
+        font-size: 1.3rem;
+    }
+
+    .skill-card p {
+        font-size: 1.1rem;
+    }
+
+    .projects-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .project-card h2 {
+        font-size: 1.3rem;
+    }
+
+    .project-info p {
+        font-size: 1.1rem;
+    }
+}
