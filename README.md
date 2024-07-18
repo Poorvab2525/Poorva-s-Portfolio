@@ -6,7 +6,7 @@ This repository contains the source code for my personal portfolio website. This
 ## Demo
 ![Homepage](images/index.png)
 ![Aboutpage](images/about.png)
-![Skillspage](images/skills.png)
+![Skillspage](images/skill.png)
 ![Projectspage](images/project.png)
 ![Experiencepage](images/exp.png)
 
