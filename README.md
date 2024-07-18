@@ -4,7 +4,7 @@
 This repository contains the source code for my personal portfolio website. This is a responsive, static portfolio website featuring projects and detailed skill sections, and experience in the industry achieving 100% mobile compatibility.
 
 ## Demo
-![Homepage](images/home.png)
+![Homepage](images/index.png)
 ![Aboutpage](images/about.png)
 ![Skillspage](images/skills.png)
 ![Projectspage](images/project.png)
