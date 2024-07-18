@@ -20,5 +20,20 @@ function handleScroll() {
     }
 }
 
-// Event listener for scroll events
-document.addEventListener('scroll', handleScroll);
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menuIcon = document.querySelector(".menu-icon");
+    const navUl = document.querySelector("nav ul");
+    const navLinks = document.querySelectorAll("nav ul li a");
+
+    menuIcon.addEventListener("click", function () {
+        navUl.classList.toggle("show");
+    });
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", function () {
+            navUl.classList.remove("show");
+        });
+    });
+});
