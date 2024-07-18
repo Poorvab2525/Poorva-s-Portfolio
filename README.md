@@ -22,8 +22,8 @@ This repository contains the source code for my personal portfolio website. This
 - Contact form
 
 ## Contact Me
-email:- poorvabhagwat@gmail.com
-linkedin:- https://www.linkedin.com/in/poorva-bhagwat/
+- email:- poorvabhagwat@gmail.com
+- linkedin:- https://www.linkedin.com/in/poorva-bhagwat/
 
 ## Installation
 Clone the repository:
