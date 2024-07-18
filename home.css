@@ -432,4 +432,148 @@ nav ul li.active::before {
     }
 }
 
+/* Experience Section Styles */
+.experience-container {
+    padding-top: 80px; /* Adjust for nav height */
+    text-align: center;
+    padding: 60px 20px; /* Padding for spacing */
+}
 
+.experience-container h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.experience-card {
+    background: #312b2b; /* Matching background color */
+    border-radius: 8px;
+    color: white; /* Matching text color */
+    box-shadow: 0 0 10px rgba(77, 75, 75, 0.5); /* Matching shadow */
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+.experience-logo {
+    max-width: 100px; /* Adjust size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem; /* Center logo and add bottom margin */
+}
+
+.experience-card h2 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.experience-card p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0.5rem 0;
+}
+
+.experience-card ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.experience-card ul li {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Social Links Styles */
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .social-links {
+        gap: 15px;
+    }
+
+    .social-links img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-links {
+        gap: 10px;
+    }
+
+    .social-links img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .experience-container h1 {
+        font-size: 2rem;
+    }
+
+    .experience-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .experience-card p {
+        font-size: 1rem;
+    }
+
+    .experience-card ul {
+        padding-left: 1rem;
+    }
+
+    .experience-card ul li {
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .experience-container h1 {
+        font-size: 2rem;
+    }
+
+    .experience-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .experience-card p {
+        font-size: 1rem;
+    }
+
+    .experience-card ul {
+        padding-left: 1rem;
+    }
+
+    .experience-card ul li {
+        font-size: 0.9rem;
+    }
+
+    .experience-logo {
+        max-width: 80px; /* Smaller logo size for smaller screens */
+    }
+}
