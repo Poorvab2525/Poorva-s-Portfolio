@@ -1,7 +1,7 @@
 # Poorva-s-Portfolio
 
 ## Description
-This repository contains the source code for my personal portfolio website. This is a responsive, static portfolio website featuring projects and detailed skill sections, and experience in the industry achieving 100% mobile compatibility.
+This repository contains the source code for my personal portfolio website. This is a responsive, static portfolio website featuring projects and skill sections, and experience in the industry achieving 100% mobile compatibility.
 
 ## https://poorva-milind-bhagwat.netlify.app/
 
