@@ -20,9 +20,5 @@ This repository contains the source code for my personal portfolio website. This
 - email:- poorvabhagwat@gmail.com
 - linkedin:- https://www.linkedin.com/in/poorva-bhagwat/
 
-## Installation
-Clone the repository:
-git clone https://github.com/Poorvab2525/Poorva-s-Portfolio.git
 
-Open the folder in your local machine
 
