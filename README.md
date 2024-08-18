@@ -14,7 +14,7 @@ This repository contains the source code for my personal portfolio website. This
 - Responsive design
 - Project showcase with detailed descriptions
 - Skills section
-- Contact form
+
 
 ## Contact Me
 - email:- poorvabhagwat@gmail.com
