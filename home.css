@@ -610,3 +610,93 @@ nav ul li.active::before {
         font-size: 1.1rem;
     }
 }
+/* Base Styles */
+.project-card h2 {
+    font-size: 1.3rem;
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  
+  .github-link img {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .project-card .overlay {
+    padding: 0.5rem;
+  }
+  
+  .project-card .project-image {
+    height: 200px;
+    width: 100%; /* Ensure image width is responsive */
+  }
+  
+  /* Responsive Styles */
+  
+  /* Tablets and small desktops */
+  @media screen and (max-width: 1024px) {
+    .project-card h2 {
+      font-size: 1.2rem;
+    }
+  
+    .github-link img,
+    .project-card h2 img {
+      width: 18px;
+      height: 18px;
+    }
+  
+    .project-card .project-image {
+      height: 180px;
+    }
+  
+    .project-card .overlay {
+      padding: 0.4rem;
+    }
+  }
+  
+  /* Smartphones and smaller tablets */
+  @media screen and (max-width: 768px) {
+    .project-card h2 {
+      font-size: 1.1rem;
+      display: block; /* Stack title and icon vertically on smaller screens */
+      text-align: center;
+    }
+  
+    .github-link img,
+    .project-card h2 img {
+      width: 16px;
+      height: 16px;
+    }
+  
+    .project-card .project-image {
+      height: 150px;
+    }
+  
+    .project-card .overlay {
+      padding: 0.3rem;
+    }
+  }
+  
+  /* Extra small devices (phones in portrait mode) */
+  @media screen and (max-width: 480px) {
+    .project-card h2 {
+      font-size: 1rem;
+    }
+  
+    .github-link img,
+    .project-card h2 img {
+      width: 14px;
+      height: 14px;
+    }
+  
+    .project-card .project-image {
+      height: 120px;
+    }
+  
+    .project-card .overlay {
+      padding: 0.2rem;
+    }
+  }
+  
